@@ -1,5 +1,5 @@
-﻿using SistemaMedicoV3.Repository;
-@model SistemaMedicoV3.Repository.EnfermedadesRepository;
+﻿
+@model SistemaMedicoV3.Models.Paciente;
 
 @{
     ViewData["Title"] = "Nueva Evolución";
@@ -14,22 +14,21 @@
     <link href="~/css/Evolucion.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Botón de Volver -->
 
+    <a href="@Url.Action("Detalles", "Paciente", new { id = Model.DNI })" class="btn btn-outline-secondary shadow-sm">
+        <i class="bi bi-arrow-left"></i> Volver
+    </a>
     <div class="container mt-4">
+        
         <div class="card shadow-sm p-4">
             <h1 class="text-primary text-center mb-4">Nueva Evolución para @Model.NombreCompleto</h1>
 
-            <!-- Botón de Volver -->
-            <div class="mb-3">
-                <a href="@Url.Action("Detalles", "Clinica", new { dni = Model.DNI })" class="btn btn-outline-secondary shadow-sm">
-                    <i class="bi bi-arrow-left"></i> Volver
-                </a>
-            </div>
-
+       
             <!-- Botón para alternar diagnósticos -->
             <div class="mb-4 text-center">
                 <button type="button" class="btn btn-info shadow-sm" id="toggleDiagnosticos">
-                    <i class="bi bi-arrow-repeat"></i> Alternar Diagnósticos
+                    <i class="bi bi-arrow-repeat"></i> Alternar
                 </button>
             </div>
 
@@ -48,17 +47,22 @@
                     </select>
                 </div>
 
-                <!-- Diagnóstico Nuevo -->    
+                <!-- Diagnóstico Nuevo -->
                 <div id="diagnosticoNuevoContainer" class="mb-4 d-none">
-                    <label for="diagnostico" class="form-label fw-bold">Diagnóstico nuevo:</label>
+                    <label for="diagnostico" class="form-label fw-bold">Seleccione el Diagnóstico</label>
                     <select class="form-select shadow-sm" id="diagnostico" name="idDiagnostico" required>
                         <option value="" disabled selected>-- Seleccionar Diagnóstico --</option>
-                        @foreach (var enfermedades in Model.EnfermedadesRepository.EnfermedadesDisponibles)
+
+                        <!-- Mostrar las enfermedades precargadas desde el EnfermedadesRepository -->
+                        @foreach (var enfermedad in Model)
                         {
-                            <option value="@enfermedades">@EnfermedadesRepository.EnfermedadesDisponibles</option>
+                            <option value="@enfermedad">@enfermedad</option>
                         }
                     </select>
                 </div>
+
+
+
 
                 <!-- Plantilla de Evolución -->
                 <div class="mb-4">

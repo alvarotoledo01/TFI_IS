@@ -1,6 +1,7 @@
 ﻿using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor.Compilation;
+using SistemaMedico.Repository;
 using SistemaMedico.Services;
 using SistemaMedicoV3.Models;
 
@@ -57,6 +58,16 @@ namespace SistemaMedico.Controllers
             }
 
             return View("~/Views/Paciente/Evolucion.cshtml", paciente); // Carga la vista Evolucion.cshtml con el modelo del paciente
+        }
+
+
+        public IActionResult Evolucion()
+        {
+            // Obtener las enfermedades disponibles desde el EnfermedadesRepository
+            var enfermedadesDisponibles = EnfermedadesRepository.EnfermedadesDisponibles;
+
+            // Pasar la lista de enfermedades a la vista
+            return View(enfermedadesDisponibles);
         }
 
 
