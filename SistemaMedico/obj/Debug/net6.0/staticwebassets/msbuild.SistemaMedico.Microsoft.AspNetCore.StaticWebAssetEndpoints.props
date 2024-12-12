@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SistemaMedico/css/Evolucion.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Evolucion.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2585"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Dec 2024 04:18:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SistemaMedico/css/Evolucion.zy02kcqm2l.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Evolucion.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zy02kcqm2l"},{"Name":"integrity","Value":"sha256-lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I="},{"Name":"label","Value":"_content/SistemaMedico/css/Evolucion.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2585"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I=\u0022"},{"Name":"Last-Modified","Value":"Thu, 12 Dec 2024 04:18:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SistemaMedico/css/Login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

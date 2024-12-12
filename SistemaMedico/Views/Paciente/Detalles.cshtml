@@ -50,12 +50,18 @@
         </div>
 
         <!-- Botón Nueva Evolución -->
-        <div class="d-flex justify-content-start mt-3">
-            <h2>Historia Clínica</h2>
-            <a href="@Url.Action("NuevaEvolucion", "Evoluciones", new { pacienteId = Model.DNI })" class="btn btn-primary">
-                <i class="fas fa-plus"></i> Nueva Evolución
-            </a>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h2>Historia Clínica</h2>
+            </div>
+            <div class="col-4">
+                <a href="@Url.Action("Evolucion", "Clinica", new { dni = Model.DNI })" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Nueva Evolución
+                </a>
+
+            </div>
         </div>
+        
 
         <!-- Diagnósticos y Evoluciones -->
         <div class="content mt-4">

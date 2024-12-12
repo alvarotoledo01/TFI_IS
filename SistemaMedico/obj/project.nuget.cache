@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bpqkqxDCqjk=",
+  "dgSpecHash": "WPNX4y3kcyk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\SistemaMedicoConFRONT\\SistemaMedico\\SistemaMedico.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\SistemaMedicoConFRONT\\TFI_IS\\SistemaMedico\\SistemaMedico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"

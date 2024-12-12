@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "css/Evolucion.css",
+      "AssetFile": "css/Evolucion.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Dec 2024 04:18:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I="
+        }
+      ]
+    },
+    {
+      "Route": "css/Evolucion.zy02kcqm2l.css",
+      "AssetFile": "css/Evolucion.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Dec 2024 04:18:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zy02kcqm2l"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lSr3XHv3bIXHqzqAuGhvVF9BtA091Qhgss3iYKti/9I="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Evolucion.css"
+        }
+      ]
+    },
+    {
       "Route": "css/Login.css",
       "AssetFile": "css/Login.css",
       "Selectors": [],
